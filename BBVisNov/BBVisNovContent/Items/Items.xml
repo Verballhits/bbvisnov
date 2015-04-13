@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item id="1" name="Money (10 Notes)" image="Graphics/Items/money_256.png" type="currency" value="10"/>
+  <Item id="2" name="Money (20 Notes)" image="Graphics/Items/money_256.png" type="currency" value="20"/>
+  <Item id="3" name="Money (50 Notes)" image="Graphics/Items/money_256.png" type="currency" value="50"/>
+  <Item id="4" name="Money (100 Notes)" image="Graphics/Items/money_256.png" type="currency" value="100"/>
+  <Item id="11" name="Protection (10 Def)" image="Graphics/Items/shield_bronze.png" type="item" value="10"/>
+  <Item id="12" name="Protection (20 Def)" image="Graphics/Items/shield_silver.png" type="item" value="20"/>
+  <Item id="13" name="Protection (50 Def)" image="Graphics/Items/shield_gold.png" type="item" value="50"/>
+</Items>

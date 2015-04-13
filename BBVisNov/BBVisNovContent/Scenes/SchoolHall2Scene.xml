@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/school_corridor2_day.jpg</BackgroundImage>
+  <BackgroundMusic>Music/FamiliarRoads.ogg</BackgroundMusic>
+  <InitialDialog></InitialDialog>
+  <ClickAreas>
+    <Area area="0, 0.9, 1, 1" name="To school front hallway" type="SceneTransition" action="Scenes/SchoolHallScene.xml"/>
+    <Area area="0.65, 0.45, 0.74, 0.55" name="To school roof" type="SceneTransition" action="Scenes/SchoolRoofLeftScene.xml"/>
+  </ClickAreas>
+</Scene>

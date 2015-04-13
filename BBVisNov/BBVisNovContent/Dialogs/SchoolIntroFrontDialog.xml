@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Once"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Great, back to school.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Maybe it won't be so bad this year.</Line>
+        <Line>Although I bet those bullies will bother me again.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="2">...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2" >
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Perhaps I should just go in through the rear gate.</Line>
+        <Line>I might be able to avoid them.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">...</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

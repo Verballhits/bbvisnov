@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/school_gate_1.jpg</BackgroundImage>
+  <BackgroundMusic>Music/FamiliarRoads.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/SchoolIntroFrontDialog.xml</InitialDialog>
+  <ClickAreas>
+    <Area area="0.2, 0.45, 0.4, 0.6" name="To school hallway" type="SceneTransition" action="Scenes/SchoolHallScene.xml"/>
+    <Area area="0.9, 0, 1, 1" name="To back bike parking" type="SceneTransition" action="Scenes/SchoolBikeScene.xml"/>
+  </ClickAreas>
+</Scene>

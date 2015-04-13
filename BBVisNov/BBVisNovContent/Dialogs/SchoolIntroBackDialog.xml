@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Repeat"></Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+    <CharacterImage name="Kate">Graphics/Characters/kate_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <ShowSceneCharacter>Kate</ShowSceneCharacter>
+      <CharacterImage>Kate</CharacterImage>
+      <Text>
+        <Line>Hey you! Sneaking in the back like a little weasel.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">I Um...</Response>
+        <Response nextnode="2">I'm not sneaking in! I came by bike and this is the closest entrance from the bike shed.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Kate</CharacterImage>
+      <Text>
+        <Line>You're still a blubbering idiot, that doesn't know how to speak to pretty girls.</Line>
+        <Line>Or don't you think I am pretty?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">I Um...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2" >
+      <CharacterImage>Kate</CharacterImage>
+      <Text>
+        <Line>Oh you got a new bike? I was getting fed up with your last one anyway, hand over the keys.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">I Um... Fine I walked to school, I don't have a bike.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="3">
+      <CharacterImage>Kate</CharacterImage>
+      <Text>
+        <Line>You know what, Fuck you!</Line>
+        <Line>Here's a little something to remind you of me for the rest of the day.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="4">Aahhh... *cough*, Damn that hurts!</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="4">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Huh?</Line>
+        <Line>*Before you can react her foot snaps up hard inbetween your legs*</Line>
+      </Text>
+      <SoundEffect>Sounds/kick.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="5">Aahhh... *cough*, Damn that hurts!</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="5">
+      <CharacterImage>Kate</CharacterImage>
+      <Text>
+        <Line>Haha, yeah, it's supposed to hurt. See you later, loser!</Line>
+        <Line>*She slaps you hard across the face*</Line>
+      </Text>
+      <SoundEffect>Sounds/slap.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="6">Ouch.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="6">
+      <HideSceneCharacter>Kate</HideSceneCharacter>
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>What a bitch.</Line>
+        <Line>So much for avoiding her...</Line>
+      </Text>
+      <Responses>
+        <Response nextnode="-1">...</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>
