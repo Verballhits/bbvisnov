@@ -41,8 +41,6 @@ namespace BBVisNov
             inputManager = new InputManager(this);
             player = new Player(this);
             screenManager = new ScreenManager(this);
-
-            //Game.IsMouseVisible = true;
         }
 
         public override void Initialize()
@@ -67,6 +65,7 @@ namespace BBVisNov
         protected override void UnloadContent()
         {
             screenManager.UnloadContent();
+            player.UnloadContent();
 
             base.UnloadContent();
         }

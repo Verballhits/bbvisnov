@@ -79,6 +79,7 @@ namespace BBVisNov
                     isActive = false;
                     screenManager.RemoveScreen(this);
                     screenManager.AddScreen(new GameplayScreen(screenManager));
+                    screenManager.GameManager.Player.SetActive();
                 }
                 else if (selectedItem.Text == "Options")
                 {
@@ -103,6 +104,7 @@ namespace BBVisNov
                         isActive = false;
                         screenManager.RemoveScreen(this);
                         screenManager.AddScreen(new GameplayScreen(screenManager));
+                        screenManager.GameManager.Player.SetActive();
                     }
                     else if (menu.MenuItems[i].Text == "Options")
                     {

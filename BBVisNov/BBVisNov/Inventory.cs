@@ -15,12 +15,27 @@ namespace BBVisNov
 
         private Dictionary<int, InventoryItem> items;
         public Dictionary<int, InventoryItem> Items;
- 
+
+        Texture2D background_texture;
+
+        private Vector2 position_inventory;
+        private Vector2 size_inventory;
+        private Rectangle area_inventory;
+
         public Inventory(Player pl)
         {
             player = pl;
             isVisible = false;
             items = new Dictionary<int, InventoryItem>();
+
+            position_inventory = new Vector2(player.GameManager.Game.Window.ClientBounds.Width * 0.66f, 30);
+            size_inventory = new Vector2(player.GameManager.Game.Window.ClientBounds.Width - position_inventory.X - 10, 200);
+            area_inventory = new Rectangle((int)position_inventory.X, (int)position_inventory.Y, (int)size_inventory.X, (int)size_inventory.Y);
+        }
+
+        public void Hide()
+        {
+            isVisible = false;
         }
 
         public void ToggleVisible()
@@ -56,26 +71,39 @@ namespace BBVisNov
             }
         }
 
+        public void LoadContent()
+        {
+            background_texture = new Texture2D(player.GameManager.GraphicsDevice, 1, 1);
+            background_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(255, 255, 255, 192) });
+        }
+
+        public void UnloadContent()
+        {
+            background_texture = null;
+        }
+
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             if (isVisible)
             {
-                int gridX = 0;
-                int gridY = 0;
+                spriteBatch.Draw(background_texture, area_inventory, Color.Black);
+
+                int gridX = 1;
+                int gridY = 1;
 
                 // Draw Inventory
                 foreach(KeyValuePair<int, InventoryItem> kv in items)
                 {
                     Item it = player.GameManager.Player.SceneManager.ItemManager.GetItem(kv.Key);
 
-                    spriteBatch.Draw(it.ImageTexture, new Rectangle(gridX, gridY, 48, 48), Color.White);
+                    spriteBatch.Draw(it.ImageTexture, new Rectangle((int)position_inventory.X + gridX, (int)position_inventory.Y + gridY, 48, 48), Color.White);
 
-                    gridX += 50;
+                    gridX += 49;
 
-                    if (gridX > 500)
+                    if (gridX + 49 > size_inventory.X)
                     {
                         gridX = 0;
-                        gridY += 50;
+                        gridY += 49;
                     }
                 }
             }

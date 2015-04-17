@@ -33,19 +33,37 @@ namespace BBVisNov
             sceneManager = sm;
         }
 
+        private bool isActive = false;
+
         public void Initialize()
         {
             inventory.AddItem(new InventoryItem(11));
             inventory.AddItem(new InventoryItem(12));
             inventory.AddItem(new InventoryItem(13));
+
+            inventory.AddItem(new InventoryItem(1));
+            inventory.AddItem(new InventoryItem(2));
+            inventory.AddItem(new InventoryItem(3));
+            inventory.AddItem(new InventoryItem(4));
         }
 
         public void LoadContent()
         {
+            inventory.LoadContent();
+        }
+
+        public void UnloadContent()
+        {
+            inventory.UnloadContent();
         }
 
         public void HandleInput()
         {
+            if (gameManager.InputManager.IsNewKeyPress(Keys.Escape))
+            {
+                SetInactive();
+            }
+
             if (gameManager.InputManager.IsNewKeyPress(Keys.I))
             {
                 inventory.ToggleVisible();
@@ -59,7 +77,21 @@ namespace BBVisNov
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            inventory.Draw(gameTime, spriteBatch);
+            if (isActive)
+            {
+                inventory.Draw(gameTime, spriteBatch);
+            }
+        }
+
+        public void SetActive()
+        {
+            isActive = true;
+        }
+
+        public void SetInactive()
+        {
+            inventory.Hide();
+            isActive = false;
         }
 
         public int GetDialogCount(string dialog)
