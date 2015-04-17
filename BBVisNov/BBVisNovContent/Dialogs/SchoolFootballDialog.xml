@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Repeat"></Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+    <CharacterImage name="Juliet">Graphics/Characters/juliet_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <ShowSceneCharacter>Juliet</ShowSceneCharacter>
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>You lost?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">No, why? Do I look lost?</Response>
+        <Response nextnode="7">*Ignore her*</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>You're just not realy a 'Jock' type person thats all.</Line>
+        <Line>We don't normally see you on the football field.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="2">I am thinking about trying out or the team this year.</Response>
+        <Response nextnode="3">Yeah I'm just hiding out for a bit.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2" >
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>Sounds like a great idea, they can always use new talent.</Line>
+        <Line>But I got to get back to practice, so see you later.</Line>
+        <Line>Oh, and good luck with the tryouts.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="7">Thanks, yeah see you later.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="3">
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>Hiding? From who?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="4">Oh, no one, never mind.</Response>
+        <Response nextnode="5">I'm trying to avoid running into Kate too often.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="4">
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>Well ok, but I got to get back to practice, so see you later.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="7">Sure thing, see you later.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="5">
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>Hihi, she been giving you a hard time again?</Line>
+        <Line>Its like there is some kind of feud going on between the two of you.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="6">Yeah I don't know what her deal is.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="6">
+      <CharacterImage>Juliet</CharacterImage>
+      <Text>
+        <Line>Oh well, good luck with that.</Line>
+        <Line>I'll see you later, OK?</Line>
+      </Text>
+      <Responses>
+        <Response nextnode="7">Yeah thanks, see you later.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="7">
+      <HideSceneCharacter>Juliet</HideSceneCharacter>
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line></Line>
+      </Text>
+      <Responses>
+        <Response nextnode="-1">Oh well, where to now?</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Dialog>
   <Triggers>
-    <Trigger type="Repeat"></Trigger>
+    <Trigger type="Once"></Trigger>
   </Triggers>
   <CharacterImages>
     <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
@@ -49,7 +49,7 @@
       </Text>
       <SoundEffect></SoundEffect>
       <Responses>
-        <Response nextnode="4">Aahhh... *cough*, Damn that hurts!</Response>
+        <Response nextnode="4">Um... What?</Response>
       </Responses>
     </DialogNode>
     <DialogNode id="4">

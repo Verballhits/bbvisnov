@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/school_football_field_day.jpg</BackgroundImage>
+  <BackgroundMusic>Music/FamiliarRoads.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/SchoolFootballDialog.xml</InitialDialog>
+  <ClickAreas>
+    <Area area="0.45, 0.45, 0.55, 0.55" name="To the gym" type="SceneTransition" action="Scenes/SchoolGymBuildingScene.xml"/>
+    <Area area="0.9, 0.45, 1, 0.55" name="To bike parking" type="SceneTransition" action="Scenes/SchoolBikeScene.xml"/>
+  </ClickAreas>
+  <Characters>
+    <Character name="Juliet" area="0.4, 0.1, 0.80, 1.2" image="Graphics/Characters/juliet.png" visible="false"/>
+  </Characters>
+</Scene>

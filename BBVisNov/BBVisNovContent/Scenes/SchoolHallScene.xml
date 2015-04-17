@@ -4,7 +4,8 @@
   <BackgroundMusic>Music/FamiliarRoads.ogg</BackgroundMusic>
   <InitialDialog></InitialDialog>
   <ClickAreas>
-    <Area area="0, 0.9, 1, 1" name="To front gate" type="SceneTransition" action="Scenes/SchoolFrontScene.xml"/>
+    <Area area="0, 0.9, 0.4, 1" name="To front gate" type="SceneTransition" action="Scenes/SchoolFrontScene.xml"/>
+    <Area area="0.6, 0.9, 1, 1" name="To back gate" type="SceneTransition" action="Scenes/SchoolBackScene.xml"/>
     <Area area="0.9, 0.45, 1, 0.55" name="To school back hallway" type="SceneTransition" action="Scenes/SchoolHall2Scene.xml"/>
   </ClickAreas>
 </Scene>
