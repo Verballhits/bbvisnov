@@ -146,6 +146,7 @@
     <Content Include="libzplay.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="_Design\ClassDiagram.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BBVisNovContent\BBVisNovContent.contentproj">
