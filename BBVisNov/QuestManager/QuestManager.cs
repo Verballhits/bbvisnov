@@ -10,5 +10,12 @@ namespace BBVisNov
         private List<Quest> ActiveQuests;
         private List<Quest> CompletedQuests;
         private List<Quest> FailedQuests;
+
+        public QuestManager()
+        {
+            ActiveQuests = new List<Quest>();
+            CompletedQuests = new List<Quest>();
+            FailedQuests = new List<Quest>();
+        }
     }
 }

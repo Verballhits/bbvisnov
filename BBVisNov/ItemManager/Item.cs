@@ -9,21 +9,34 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BBVisNov
 {
-    public class SceneCharacter
+    [XmlRoot("Items")]
+    public class ItemList
     {
+        [XmlElement("Item")]
+        public List<Item> Items { get; set; }
+
+        public ItemList()
+        {
+            Items = new List<Item>();
+        }
+    }
+
+    public class Item
+    {
+        [XmlAttribute("id")]
+        public int ItemID { get; set; }
+
         [XmlAttribute("name")]
         public string Name { get; set; }
 
-        [XmlAttribute("area")]
-        public string Area { get; set; }
-        public Rectangle AreaRect { get; set; }
-        
         [XmlAttribute("image")]
         public string Image { get; set; }
+
+        [XmlIgnore]
         public Texture2D ImageTexture { get; set; }
 
-        [XmlAttribute("visible")]
-        public bool Visible { get; set; }
+        [XmlAttribute("value")]
+        public int Value { get; set; }
 
         public void LoadContent(TextureManager tm)
         {
@@ -34,14 +47,6 @@ namespace BBVisNov
         {
             ImageTexture = null;
             tm.RemoveUser(Image);
-        }
-
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
-        {
-            if (Visible)
-            {
-                spriteBatch.Draw(ImageTexture, AreaRect, Color.White);
-            }
         }
     }
 }

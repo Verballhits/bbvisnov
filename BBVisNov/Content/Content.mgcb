@@ -1,0 +1,147 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin
+/intermediateDir:obj
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Items/Items.xml
+/copy:Items/Items.xml
+
+#begin Dialogs/SchoolIntroBackDialog.xml
+/copy:Dialogs/SchoolIntroBackDialog.xml
+
+#begin Graphics/Backgrounds/ravine_noon.jpg
+/copy:Graphics/Backgrounds/ravine_noon.jpg
+
+#begin Graphics/Backgrounds/school_corridor_morning.jpg
+/copy:Graphics/Backgrounds/school_corridor_morning.jpg
+
+#begin Graphics/Backgrounds/school_gate_1.jpg
+/copy:Graphics/Backgrounds/school_gate_1.jpg
+
+#begin Graphics/Backgrounds/school_gate_2.jpg
+/copy:Graphics/Backgrounds/school_gate_2.jpg
+
+#begin Graphics/Backgrounds/school_gate_3.jpg
+/copy:Graphics/Backgrounds/school_gate_3.jpg
+
+#begin Graphics/Characters/kate.png
+/copy:Graphics/Characters/kate.png
+
+#begin Music/Defiance.ogg
+/copy:Music/Defiance.ogg
+
+#begin Scenes/SchoolBackScene.xml
+/copy:Scenes/SchoolBackScene.xml
+
+#begin Scenes/SchoolFrontScene.xml
+/copy:Scenes/SchoolFrontScene.xml
+
+#begin Sounds/kick.ogg
+/copy:Sounds/kick.ogg
+
+#begin Sounds/slap.ogg
+/copy:Sounds/slap.ogg
+
+#begin Sounds/spinkick.ogg
+/copy:Sounds/spinkick.ogg
+
+#begin Sounds/sweepkick.ogg
+/copy:Sounds/sweepkick.ogg
+
+#begin Fonts/Arial.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Arial.spritefont
+
+#begin Fonts/menufont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:Fonts/menufont.spritefont
+
+#begin Music/FamiliarRoads.ogg
+/copy:Music/FamiliarRoads.ogg
+
+#begin Scenes/SchoolHallScene.xml
+/copy:Scenes/SchoolHallScene.xml
+
+#begin Dialogs/SchoolIntroFrontDialog.xml
+/copy:Dialogs/SchoolIntroFrontDialog.xml
+
+#begin Graphics/Backgrounds/school_corridor2_day.jpg
+/copy:Graphics/Backgrounds/school_corridor2_day.jpg
+
+#begin Scenes/SchoolHall2Scene.xml
+/copy:Scenes/SchoolHall2Scene.xml
+
+#begin Graphics/Backgrounds/school_rooftop_left_morning.jpg
+/copy:Graphics/Backgrounds/school_rooftop_left_morning.jpg
+
+#begin Graphics/Backgrounds/school_rooftop_right_morning.jpg
+/copy:Graphics/Backgrounds/school_rooftop_right_morning.jpg
+
+#begin Scenes/SchoolRoofLeftScene.xml
+/copy:Scenes/SchoolRoofLeftScene.xml
+
+#begin Scenes/SchoolRoofRightScene.xml
+/copy:Scenes/SchoolRoofRightScene.xml
+
+#begin Graphics/Characters/kate_dialog.png
+/copy:Graphics/Characters/kate_dialog.png
+
+#begin Graphics/Characters/player_dialog.png
+/copy:Graphics/Characters/player_dialog.png
+
+#begin Graphics/Items/money_256.png
+/copy:Graphics/Items/money_256.png
+
+#begin Graphics/Cursors/cursor.png
+/copy:Graphics/Cursors/cursor.png
+
+#begin Graphics/Items/shield_gold.png
+/copy:Graphics/Items/shield_gold.png
+
+#begin Graphics/Items/shield_bronze.png
+/copy:Graphics/Items/shield_bronze.png
+
+#begin Graphics/Items/shield_silver.png
+/copy:Graphics/Items/shield_silver.png
+
+#begin Graphics/Backgrounds/school_bikeparking_morning.jpg
+/copy:Graphics/Backgrounds/school_bikeparking_morning.jpg
+
+#begin Scenes/SchoolBikeScene.xml
+/copy:Scenes/SchoolBikeScene.xml
+
+#begin Dialogs/SchoolFootballDialog.xml
+/copy:Dialogs/SchoolFootballDialog.xml
+
+#begin Graphics/Backgrounds/school_football_field_day.jpg
+/copy:Graphics/Backgrounds/school_football_field_day.jpg
+
+#begin Graphics/Backgrounds/school_gym_building_day.jpg
+/copy:Graphics/Backgrounds/school_gym_building_day.jpg
+
+#begin Graphics/Characters/juliet.png
+/copy:Graphics/Characters/juliet.png
+
+#begin Graphics/Characters/juliet_dialog.png
+/copy:Graphics/Characters/juliet_dialog.png
+
+#begin Scenes/SchoolFootballFieldScene.xml
+/copy:Scenes/SchoolFootballFieldScene.xml
+
+#begin Scenes/SchoolGymBuildingScene.xml
+/copy:Scenes/SchoolGymBuildingScene.xml
+

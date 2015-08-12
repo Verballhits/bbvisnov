@@ -1,2 +1,0 @@
-# bbvisnov
-Visual Novel Engine
