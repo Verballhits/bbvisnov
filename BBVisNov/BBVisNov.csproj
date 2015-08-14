@@ -67,6 +67,8 @@
     <Compile Include="ScreenManager\ScreenManager.cs" />
     <Compile Include="Screens\GameplayScreen.cs" />
     <Compile Include="Screens\MenuScreen.cs" />
+    <Compile Include="Screens\PauseScreen.cs" />
+    <Compile Include="StoryManager\StoryManager.cs" />
     <Compile Include="TextureManager\TextureManager.cs" />
     <Compile Include="VisNovGame.cs" />
   </ItemGroup>

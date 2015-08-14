@@ -26,7 +26,7 @@ namespace BBVisNov
         {
             if (!texturelist.ContainsKey(texturename))
             {
-                Texture2D tex = Texture2D.FromStream(gameManager.GraphicsDevice, File.OpenRead("Content/" + texturename));
+                Texture2D tex = Texture2D.FromStream(gameManager.GraphicsDevice, File.OpenRead(texturename));
 
                 texturelist.Add(texturename, new TextureInstance(tex));
             }

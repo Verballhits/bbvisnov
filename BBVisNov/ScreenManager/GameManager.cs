@@ -34,12 +34,19 @@ namespace BBVisNov
             get { return textureManager; }
         }
 
+        private StoryManager storyManager;
+        public StoryManager StoryManager
+        {
+            get { return storyManager; }
+        }
+
         public GameManager(Game game)
             : base(game)
         {
             textureManager = new TextureManager(this);
             inputManager = new InputManager(this);
             player = new Player(this);
+            storyManager = new StoryManager(this);
             screenManager = new ScreenManager(this);
         }
 
@@ -49,12 +56,14 @@ namespace BBVisNov
 
             inputManager.Initialize();
             player.Initialize();
+            storyManager.Initialize();
             screenManager.Initialize();
         }
 
         protected override void LoadContent()
         {
             player.LoadContent();
+            storyManager.LoadContent();
             screenManager.LoadContent();
 
             screenManager.AddScreen(new MenuScreen(screenManager));

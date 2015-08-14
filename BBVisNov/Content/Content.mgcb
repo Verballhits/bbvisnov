@@ -13,135 +13,138 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Items/Items.xml
-/copy:Items/Items.xml
+#begin Stories/SchoolNovelDemo.story.xml
+/copy:Stories/SchoolNovelDemo.story.xml
 
-#begin Dialogs/SchoolIntroBackDialog.xml
-/copy:Dialogs/SchoolIntroBackDialog.xml
-
-#begin Graphics/Backgrounds/ravine_noon.jpg
-/copy:Graphics/Backgrounds/ravine_noon.jpg
-
-#begin Graphics/Backgrounds/school_corridor_morning.jpg
-/copy:Graphics/Backgrounds/school_corridor_morning.jpg
-
-#begin Graphics/Backgrounds/school_gate_1.jpg
-/copy:Graphics/Backgrounds/school_gate_1.jpg
-
-#begin Graphics/Backgrounds/school_gate_2.jpg
-/copy:Graphics/Backgrounds/school_gate_2.jpg
-
-#begin Graphics/Backgrounds/school_gate_3.jpg
-/copy:Graphics/Backgrounds/school_gate_3.jpg
-
-#begin Graphics/Characters/kate.png
-/copy:Graphics/Characters/kate.png
-
-#begin Music/Defiance.ogg
-/copy:Music/Defiance.ogg
-
-#begin Scenes/SchoolBackScene.xml
-/copy:Scenes/SchoolBackScene.xml
-
-#begin Scenes/SchoolFrontScene.xml
-/copy:Scenes/SchoolFrontScene.xml
-
-#begin Sounds/kick.ogg
-/copy:Sounds/kick.ogg
-
-#begin Sounds/slap.ogg
-/copy:Sounds/slap.ogg
-
-#begin Sounds/spinkick.ogg
-/copy:Sounds/spinkick.ogg
-
-#begin Sounds/sweepkick.ogg
-/copy:Sounds/sweepkick.ogg
-
-#begin Fonts/Arial.spritefont
+#begin Game/Fonts/Arial.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:TextureFormat=Compressed
-/build:Fonts/Arial.spritefont
+/build:Game/Fonts/Arial.spritefont
 
-#begin Fonts/menufont.spritefont
+#begin Game/Fonts/menufont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:TextureFormat=Compressed
-/build:Fonts/menufont.spritefont
+/build:Game/Fonts/menufont.spritefont
 
-#begin Music/FamiliarRoads.ogg
-/copy:Music/FamiliarRoads.ogg
+#begin Game/Graphics/Cursors/cursor.png
+/copy:Game/Graphics/Cursors/cursor.png
 
-#begin Scenes/SchoolHallScene.xml
-/copy:Scenes/SchoolHallScene.xml
+#begin Stories/SchoolNovelDemo/Dialogs/SchoolFootballDialog.xml
+/copy:Stories/SchoolNovelDemo/Dialogs/SchoolFootballDialog.xml
 
-#begin Dialogs/SchoolIntroFrontDialog.xml
-/copy:Dialogs/SchoolIntroFrontDialog.xml
+#begin Stories/SchoolNovelDemo/Dialogs/SchoolIntroBackDialog.xml
+/copy:Stories/SchoolNovelDemo/Dialogs/SchoolIntroBackDialog.xml
 
-#begin Graphics/Backgrounds/school_corridor2_day.jpg
-/copy:Graphics/Backgrounds/school_corridor2_day.jpg
+#begin Stories/SchoolNovelDemo/Dialogs/SchoolIntroFrontDialog.xml
+/copy:Stories/SchoolNovelDemo/Dialogs/SchoolIntroFrontDialog.xml
 
-#begin Scenes/SchoolHall2Scene.xml
-/copy:Scenes/SchoolHall2Scene.xml
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_bikeparking_morning.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_bikeparking_morning.jpg
 
-#begin Graphics/Backgrounds/school_rooftop_left_morning.jpg
-/copy:Graphics/Backgrounds/school_rooftop_left_morning.jpg
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_corridor2_day.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_corridor2_day.jpg
 
-#begin Graphics/Backgrounds/school_rooftop_right_morning.jpg
-/copy:Graphics/Backgrounds/school_rooftop_right_morning.jpg
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_corridor_morning.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_corridor_morning.jpg
 
-#begin Scenes/SchoolRoofLeftScene.xml
-/copy:Scenes/SchoolRoofLeftScene.xml
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_football_field_day.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_football_field_day.jpg
 
-#begin Scenes/SchoolRoofRightScene.xml
-/copy:Scenes/SchoolRoofRightScene.xml
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_1.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_1.jpg
 
-#begin Graphics/Characters/kate_dialog.png
-/copy:Graphics/Characters/kate_dialog.png
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_2.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_2.jpg
 
-#begin Graphics/Characters/player_dialog.png
-/copy:Graphics/Characters/player_dialog.png
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_3.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gate_3.jpg
 
-#begin Graphics/Items/money_256.png
-/copy:Graphics/Items/money_256.png
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gym_building_day.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_gym_building_day.jpg
 
-#begin Graphics/Cursors/cursor.png
-/copy:Graphics/Cursors/cursor.png
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_rooftop_left_morning.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_rooftop_left_morning.jpg
 
-#begin Graphics/Items/shield_gold.png
-/copy:Graphics/Items/shield_gold.png
+#begin Stories/SchoolNovelDemo/Graphics/Backgrounds/school_rooftop_right_morning.jpg
+/copy:Stories/SchoolNovelDemo/Graphics/Backgrounds/school_rooftop_right_morning.jpg
 
-#begin Graphics/Items/shield_bronze.png
-/copy:Graphics/Items/shield_bronze.png
+#begin Stories/SchoolNovelDemo/Graphics/Characters/juliet.png
+/copy:Stories/SchoolNovelDemo/Graphics/Characters/juliet.png
 
-#begin Graphics/Items/shield_silver.png
-/copy:Graphics/Items/shield_silver.png
+#begin Stories/SchoolNovelDemo/Graphics/Characters/juliet_dialog.png
+/copy:Stories/SchoolNovelDemo/Graphics/Characters/juliet_dialog.png
 
-#begin Graphics/Backgrounds/school_bikeparking_morning.jpg
-/copy:Graphics/Backgrounds/school_bikeparking_morning.jpg
+#begin Stories/SchoolNovelDemo/Graphics/Characters/kate.png
+/copy:Stories/SchoolNovelDemo/Graphics/Characters/kate.png
 
-#begin Scenes/SchoolBikeScene.xml
-/copy:Scenes/SchoolBikeScene.xml
+#begin Stories/SchoolNovelDemo/Graphics/Characters/kate_dialog.png
+/copy:Stories/SchoolNovelDemo/Graphics/Characters/kate_dialog.png
 
-#begin Dialogs/SchoolFootballDialog.xml
-/copy:Dialogs/SchoolFootballDialog.xml
+#begin Stories/SchoolNovelDemo/Graphics/Characters/player_dialog.png
+/copy:Stories/SchoolNovelDemo/Graphics/Characters/player_dialog.png
 
-#begin Graphics/Backgrounds/school_football_field_day.jpg
-/copy:Graphics/Backgrounds/school_football_field_day.jpg
+#begin Stories/SchoolNovelDemo/Graphics/Items/money_256.png
+/copy:Stories/SchoolNovelDemo/Graphics/Items/money_256.png
 
-#begin Graphics/Backgrounds/school_gym_building_day.jpg
-/copy:Graphics/Backgrounds/school_gym_building_day.jpg
+#begin Stories/SchoolNovelDemo/Graphics/Items/shield_bronze.png
+/copy:Stories/SchoolNovelDemo/Graphics/Items/shield_bronze.png
 
-#begin Graphics/Characters/juliet.png
-/copy:Graphics/Characters/juliet.png
+#begin Stories/SchoolNovelDemo/Graphics/Items/shield_gold.png
+/copy:Stories/SchoolNovelDemo/Graphics/Items/shield_gold.png
 
-#begin Graphics/Characters/juliet_dialog.png
-/copy:Graphics/Characters/juliet_dialog.png
+#begin Stories/SchoolNovelDemo/Graphics/Items/shield_silver.png
+/copy:Stories/SchoolNovelDemo/Graphics/Items/shield_silver.png
 
-#begin Scenes/SchoolFootballFieldScene.xml
-/copy:Scenes/SchoolFootballFieldScene.xml
+#begin Stories/SchoolNovelDemo/Items/Items.xml
+/copy:Stories/SchoolNovelDemo/Items/Items.xml
 
-#begin Scenes/SchoolGymBuildingScene.xml
-/copy:Scenes/SchoolGymBuildingScene.xml
+#begin Stories/SchoolNovelDemo/Music/Defiance.ogg
+/copy:Stories/SchoolNovelDemo/Music/Defiance.ogg
+
+#begin Stories/SchoolNovelDemo/Music/FamiliarRoads.ogg
+/copy:Stories/SchoolNovelDemo/Music/FamiliarRoads.ogg
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolBackScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolBackScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolBikeScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolBikeScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolFootballFieldScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolFootballFieldScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolFrontScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolFrontScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolGymBuildingScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolGymBuildingScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolHall2Scene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolHall2Scene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolHallScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolHallScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolRoofLeftScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolRoofLeftScene.xml
+
+#begin Stories/SchoolNovelDemo/Scenes/SchoolRoofRightScene.xml
+/copy:Stories/SchoolNovelDemo/Scenes/SchoolRoofRightScene.xml
+
+#begin Stories/SchoolNovelDemo/Sounds/kick.ogg
+/copy:Stories/SchoolNovelDemo/Sounds/kick.ogg
+
+#begin Stories/SchoolNovelDemo/Sounds/slap.ogg
+/copy:Stories/SchoolNovelDemo/Sounds/slap.ogg
+
+#begin Stories/SchoolNovelDemo/Sounds/spinkick.ogg
+/copy:Stories/SchoolNovelDemo/Sounds/spinkick.ogg
+
+#begin Stories/SchoolNovelDemo/Sounds/sweepkick.ogg
+/copy:Stories/SchoolNovelDemo/Sounds/sweepkick.ogg
+
+#begin Game/Graphics/Backgrounds/menu.jpg
+/copy:Game/Graphics/Backgrounds/menu.jpg
 

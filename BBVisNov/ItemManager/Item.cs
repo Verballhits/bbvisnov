@@ -38,9 +38,9 @@ namespace BBVisNov
         [XmlAttribute("value")]
         public int Value { get; set; }
 
-        public void LoadContent(TextureManager tm)
+        public void LoadContent(GameManager gm)
         {
-            ImageTexture = tm.GetTextureAddUser(Image);
+            ImageTexture = gm.TextureManager.GetTextureAddUser(gm.StoryManager.ContentFolderStoryFull + Image);
         }
 
         public void UnloadContent(TextureManager tm)

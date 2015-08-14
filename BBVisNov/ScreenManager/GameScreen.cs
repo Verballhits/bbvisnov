@@ -14,6 +14,7 @@ namespace BBVisNov
         public Boolean IsActive
         {
             get { return isActive; }
+            set { isActive = value; }
         }
 
         protected ScreenManager screenManager;

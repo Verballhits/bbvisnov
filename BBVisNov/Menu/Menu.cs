@@ -27,13 +27,13 @@ namespace BBVisNov
 
         string menuTitle;
 
-        public Menu(ScreenManager sm)
+        public Menu(ScreenManager sm, string title)
         {
             screenManager = sm;
 
             selectedItem = 0;
 
-            menuTitle = "BB Visual Novel";
+            menuTitle = title;
         }
 
         public void Update(GameTime gameTime)

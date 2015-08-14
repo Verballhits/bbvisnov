@@ -67,10 +67,10 @@ namespace BBVisNov
         public void LoadContent()
         {
             CursorColor = Color.White;
-            cursorTexture = gameManager.TextureManager.GetTextureAddUser("Graphics/Cursors/cursor.png");
+            cursorTexture = gameManager.TextureManager.GetTextureAddUser(gameManager.StoryManager.ContentFolderGameFull + "Graphics/Cursors/cursor.png");
 
-            menuFont = gameManager.Game.Content.Load<SpriteFont>("Fonts/menufont");
-            hudFont = gameManager.Game.Content.Load<SpriteFont>("Fonts/Arial");
+            menuFont = gameManager.Game.Content.Load<SpriteFont>(gameManager.StoryManager.ContentFolderGame + "Fonts/menufont");
+            hudFont = gameManager.Game.Content.Load<SpriteFont>(gameManager.StoryManager.ContentFolderGame + "Fonts/Arial");
 
             foreach (GameScreen screen in screens)
             {
@@ -80,7 +80,7 @@ namespace BBVisNov
 
         public void UnloadContent()
         {
-            gameManager.TextureManager.RemoveUser("Graphics/cursor.png");
+            gameManager.TextureManager.RemoveUser(gameManager.StoryManager.ContentFolderGameFull + "Graphics/cursor.png");
         }
 
         public void Update(GameTime gameTime)

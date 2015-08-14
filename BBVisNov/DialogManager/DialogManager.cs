@@ -96,14 +96,14 @@ namespace BBVisNov
                 
                 if (!string.IsNullOrEmpty(dn.SoundEffect))
                 {
-                    sceneManager.SoundEffectManager.LoadSoundEff("Content/" + dn.SoundEffect);
+                    sceneManager.SoundEffectManager.LoadSoundEff(screenManager.GameManager.StoryManager.ContentFolderStoryFull + dn.SoundEffect);
                 }
             }
 
             UnloadCharacters(screenManager.GameManager.TextureManager);
             foreach (DialogCharacter dc in dialogNodeList.Characters)
             {
-                characterTextures.Add(dc.Name, screenManager.GameManager.TextureManager.GetTextureAddUser(dc.Image));
+                characterTextures.Add(dc.Name, screenManager.GameManager.TextureManager.GetTextureAddUser(screenManager.GameManager.StoryManager.ContentFolderStoryFull + dc.Image));
             }
 
             foreach (DialogTrigger tr in dialogNodeList.Triggers)
@@ -189,7 +189,7 @@ namespace BBVisNov
 
                 if (!string.IsNullOrEmpty(dialogNodes[currentNodeID].SoundEffect))
                 {
-                    sceneManager.SoundEffectManager.PlaySoundEff("Content/" + dialogNodes[currentNodeID].SoundEffect);
+                    sceneManager.SoundEffectManager.PlaySoundEff(screenManager.GameManager.StoryManager.ContentFolderStoryFull + dialogNodes[currentNodeID].SoundEffect);
                 }
             }
         }

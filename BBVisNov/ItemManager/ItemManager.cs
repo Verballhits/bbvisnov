@@ -31,7 +31,7 @@ namespace BBVisNov
 
         public void LoadContent()
         {
-            string itemlist = "Content/Items/Items.xml";
+            string itemlist = screenManager.GameManager.StoryManager.ContentFolderStoryFull + "Items/Items.xml";
 
             XmlSerializer serializer = new XmlSerializer(typeof(ItemList));
 
@@ -43,7 +43,7 @@ namespace BBVisNov
             foreach (Item itm in itemList.Items)
             {
                 items.Add(itm.ItemID, itm);
-                itm.LoadContent(screenManager.GameManager.TextureManager);
+                itm.LoadContent(screenManager.GameManager);
             }
         }
 

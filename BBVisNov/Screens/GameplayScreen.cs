@@ -34,7 +34,7 @@ namespace BBVisNov
             sceneManager.LoadContent();
 
             // Initial Scene
-            sceneManager.LoadNewScene("Content/Scenes/SchoolFrontScene.xml", screenManager);
+            sceneManager.LoadNewScene(screenManager.GameManager.StoryManager.ContentFolderStoryFull + screenManager.GameManager.StoryManager.InitialScene, screenManager);
         }
 
         public override void UnloadContent()
@@ -50,8 +50,7 @@ namespace BBVisNov
             if (screenManager.GameManager.InputManager.IsNewKeyPress(Keys.Escape))
             {
                 isActive = false;
-                screenManager.RemoveScreen(this);
-                screenManager.AddScreen(new MenuScreen(screenManager));
+                screenManager.AddScreen(new PauseScreen(screenManager));
             }
 
             sceneManager.Update(gameTime);

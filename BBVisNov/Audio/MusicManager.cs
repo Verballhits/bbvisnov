@@ -40,6 +40,16 @@ namespace BBVisNov
             currentBackgroundMusic = "";
         }
 
+        public void PauseBackgroundMusic()
+        {
+            backgroundMusicPlayer.PausePlayback();
+        }
+
+        public void ResumeBackgroundMusic()
+        {
+            backgroundMusicPlayer.ResumePlayback();
+        }
+
         public void Update()
         {
             if (currentBackgroundMusic != "")

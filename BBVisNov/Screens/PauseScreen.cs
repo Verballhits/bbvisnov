@@ -1,17 +1,14 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-
-
 namespace BBVisNov
 {
-    public class MenuScreen : GameScreen
+    public class PauseScreen : GameScreen
     {
         string background_name;
         Texture2D background_texture;
@@ -21,11 +18,11 @@ namespace BBVisNov
 
         Menu menu;
 
-        public MenuScreen(ScreenManager sm)
+        public PauseScreen(ScreenManager sm)
             : base(sm)
         {
-            menu = new Menu(sm, "BB Visual Novel");
-
+            menu = new Menu(sm, "Paused");
+            
             background_name = screenManager.GameManager.StoryManager.ContentFolderGameFull + "Graphics/Backgrounds/menu.jpg";
         }
 
@@ -41,17 +38,14 @@ namespace BBVisNov
             menubackground_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(0, 0, 255, 120) });
 
             // Create and add menu items
-            MenuItem item_new = new MenuItem(menu, "New Game", new Vector2(0, 100));
-            MenuItem item_load = new MenuItem(menu, "Load Game", new Vector2(0, 5), item_new);
-            MenuItem item_options = new MenuItem(menu, "Options", new Vector2(0, 5), item_load);
-            MenuItem item_quit = new MenuItem(menu, "Quit", new Vector2(0, 5), item_options);
+            MenuItem item_resume = new MenuItem(menu, "Resume Game", new Vector2(0, 100));
+            MenuItem item_save = new MenuItem(menu, "Save Game", new Vector2(0, 5), item_resume);
+            MenuItem item_mainmenu = new MenuItem(menu, "Main Menu", new Vector2(0, 5), item_save);
 
-            menu.AddMenuItem(item_new);
-            menu.AddMenuItem(item_load);
-            menu.AddMenuItem(item_options);
-            menu.AddMenuItem(item_quit);
-
-
+            menu.AddMenuItem(item_resume);
+            menu.AddMenuItem(item_save);
+            menu.AddMenuItem(item_mainmenu);
+            
             int menu_back_x = (int)(screenManager.GameManager.Game.Window.ClientBounds.Width * 0.4);
             int menu_back_y = 130;
             int menu_back_width = (int)(screenManager.GameManager.Game.Window.ClientBounds.Width * 0.2);
@@ -76,23 +70,22 @@ namespace BBVisNov
             {
                 MenuItem selectedItem = menu.GetSelectedItem();
 
-                if (selectedItem.Text == "New Game")
+                if (selectedItem.Text == "Resume Game")
                 {
                     isActive = false;
                     screenManager.RemoveScreen(this);
-                    screenManager.GameManager.Player.DialogCounters.Clear();
-                    screenManager.AddScreen(new GameplayScreen(screenManager));
+                    screenManager.Screens[0].IsActive = true;
                     screenManager.GameManager.Player.SetActive();
                 }
-                else if (selectedItem.Text == "Load Game")
+                else if (selectedItem.Text == "Save Game")
                 {
                 }
-                else if (selectedItem.Text == "Options")
+                else if (selectedItem.Text == "Main Menu")
                 {
-                }
-                else if (selectedItem.Text == "Quit")
-                {
-                    screenManager.GameManager.Game.Exit();
+                    isActive = false;
+                    screenManager.RemoveScreen(this);
+                    screenManager.RemoveScreen(screenManager.Screens[0]);
+                    screenManager.AddScreen(new MenuScreen(screenManager));
                 }
             }
 
@@ -105,30 +98,32 @@ namespace BBVisNov
 
                 if (screenManager.GameManager.InputManager.IsNewMouseClickArea(menu.MenuItems[i].Area))
                 {
-                    if (menu.MenuItems[i].Text == "New Game")
+                    if (menu.MenuItems[i].Text == "Resume Game")
                     {
                         isActive = false;
                         screenManager.RemoveScreen(this);
-                        screenManager.GameManager.Player.DialogCounters.Clear();
-                        screenManager.AddScreen(new GameplayScreen(screenManager));
+                        screenManager.Screens[0].IsActive = true;
                         screenManager.GameManager.Player.SetActive();
                     }
-                    else if (menu.MenuItems[i].Text == "Load Game")
+                    else if (menu.MenuItems[i].Text == "Save Game")
                     {
                     }
-                    else if (menu.MenuItems[i].Text == "Options")
+                    else if (menu.MenuItems[i].Text == "Main Menu")
                     {
-                    }
-                    else if (menu.MenuItems[i].Text == "Quit")
-                    {
-                        screenManager.GameManager.Game.Exit();
+                        isActive = false;
+                        screenManager.RemoveScreen(this);
+                        screenManager.RemoveScreen(screenManager.Screens[0]);
+                        screenManager.AddScreen(new MenuScreen(screenManager));
                     }
                 }
             }
 
             if (screenManager.GameManager.InputManager.IsNewKeyPress(Keys.Escape))
             {
-                screenManager.GameManager.Game.Exit();
+                isActive = false;
+                screenManager.RemoveScreen(this);
+                screenManager.Screens[0].IsActive = true;
+                screenManager.GameManager.Player.SetActive();
             }
         }
 

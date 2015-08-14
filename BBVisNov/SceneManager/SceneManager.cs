@@ -78,11 +78,11 @@ namespace BBVisNov
             // Load Dialog
             if (!string.IsNullOrEmpty(currentScene.InitialDialog))
             {
-                dialogManager.LoadDialogNodes("Content/" + currentScene.InitialDialog);
+                dialogManager.LoadDialogNodes(screenManager.GameManager.StoryManager.ContentFolderStoryFull + currentScene.InitialDialog);
             }
             
             // Change Music
-            musicManager.PlayBackgroundMusic("Content/" + currentScene.BackgroundMusic);
+            musicManager.PlayBackgroundMusic(screenManager.GameManager.StoryManager.ContentFolderStoryFull + currentScene.BackgroundMusic);
         }
 
         public void UnloadCurrentScene()

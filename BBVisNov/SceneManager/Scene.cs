@@ -67,7 +67,7 @@ namespace BBVisNov
 
         public void LoadContent()
         {
-            background_texture = screenManager.GameManager.TextureManager.GetTextureAddUser(BackgroundImage);
+            background_texture = screenManager.GameManager.TextureManager.GetTextureAddUser(screenManager.GameManager.StoryManager.ContentFolderStoryFull + BackgroundImage);
 
             pixel = new Texture2D(screenManager.GameManager.Game.GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
             pixel.SetData(new[] { Color.White });
@@ -114,7 +114,7 @@ namespace BBVisNov
                 int area_heigth = area_y2 - area_y;
 
                 charac.AreaRect = new Rectangle(area_x, area_y, area_width, area_heigth);
-                charac.LoadContent(screenManager.GameManager.TextureManager);
+                charac.LoadContent(screenManager.GameManager);
             }
         }
 
@@ -153,7 +153,7 @@ namespace BBVisNov
                     switch (area.Type)
                     {
                         case "SceneTransition":
-                            sceneManager.LoadNewScene("Content/" + area.Action, screenManager);
+                            sceneManager.LoadNewScene(screenManager.GameManager.StoryManager.ContentFolderStoryFull + area.Action, screenManager);
                             sceneManager.Hud.MouseHoverText = "";
                             break;
                     }
