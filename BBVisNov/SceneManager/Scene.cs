@@ -45,6 +45,9 @@ namespace BBVisNov
         [XmlArrayItem("Character")]
         public List<SceneCharacter> Characters { get; set; }
 
+        ClickArea hoveredClickArea;
+        bool hoveredClickAreaActive;
+
         bool showClickAreas;
         Texture2D pixel;
 
@@ -133,29 +136,36 @@ namespace BBVisNov
             screenManager.GameManager.TextureManager.RemoveUser(BackgroundImage);
 
         }
-
+        
         public void Update(GameTime gameTime)
         {
             sceneManager.Hud.MouseHoverText = "";
 
             showClickAreas = screenManager.GameManager.InputManager.IsKeyPressed(Keys.LeftControl);
+            hoveredClickAreaActive = false;
 
             // Check is mouse is over a click area and show the name.
             foreach (ClickArea area in ClickAreas)
             {
-                if (screenManager.GameManager.InputManager.IsMouseInArea(area.AreaRect))
+                if (area.QuestRequired == 0 || sceneManager.QuestManager.HasActiveQuest(area.QuestRequired))
                 {
-                    sceneManager.Hud.MouseHoverText = area.Name;
-                }
-
-                if (screenManager.GameManager.InputManager.IsNewMouseClickArea(area.AreaRect))
-                {
-                    switch (area.Type)
+                    if (screenManager.GameManager.InputManager.IsMouseInArea(area.AreaRect))
                     {
-                        case "SceneTransition":
-                            sceneManager.LoadNewScene(screenManager.GameManager.StoryManager.ContentFolderStoryFull + area.Action, screenManager);
-                            sceneManager.Hud.MouseHoverText = "";
-                            break;
+                        sceneManager.Hud.MouseHoverText = area.Name;
+
+                        hoveredClickArea = area;
+                        hoveredClickAreaActive = true;
+                    }
+
+                    if (screenManager.GameManager.InputManager.IsNewMouseClickArea(area.AreaRect))
+                    {
+                        switch (area.Type)
+                        {
+                            case "SceneTransition":
+                                sceneManager.LoadNewScene(screenManager.GameManager.StoryManager.ContentFolderStoryFull + area.Action, screenManager);
+                                sceneManager.Hud.MouseHoverText = "";
+                                break;
+                        }
                     }
                 }
             }
@@ -182,7 +192,7 @@ namespace BBVisNov
 
             foreach (SceneItem itm in Items)
             {
-                spriteBatch .Draw(sceneManager.ItemManager.GetItem(itm.ItemID).ImageTexture, itm.AreaRect, Color.White);
+                spriteBatch.Draw(sceneManager.ItemManager.GetItem(itm.ItemID).ImageTexture, itm.AreaRect, Color.White);
             }
 
             if (showClickAreas)
@@ -190,13 +200,23 @@ namespace BBVisNov
                 // Draw ClickArea Borders
                 foreach (ClickArea area in ClickAreas)
                 {
-                    DrawBorder(spriteBatch, area.AreaRect, 3, Color.Red);
+                    if (area.QuestRequired == 0 || sceneManager.QuestManager.HasActiveQuest(area.QuestRequired))
+                    {
+                        DrawBorder(spriteBatch, area.AreaRect, 3, Color.FromNonPremultiplied(0, 0, 255, 96));
+                    }
                 }
 
                 // Draw SceneItem Borders
                 foreach (SceneItem itm in Items)
                 {
-                    DrawBorder(spriteBatch, itm.AreaRect, 3, Color.Yellow);
+                    DrawBorder(spriteBatch, itm.AreaRect, 3, Color.FromNonPremultiplied(255, 255, 0, 96));
+                }
+            }
+            else if (hoveredClickAreaActive)
+            {
+                if (hoveredClickArea.QuestRequired == 0 || sceneManager.QuestManager.HasActiveQuest(hoveredClickArea.QuestRequired))
+                {
+                    DrawBorder(spriteBatch, hoveredClickArea.AreaRect, 3, Color.FromNonPremultiplied(0, 0, 255, 96));
                 }
             }
         }

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/DungWindow.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog></InitialDialog>
+  <ClickAreas>
+    <Area area="0.45, 0.2, 0.55 0.5" name="Look Out" type="SceneTransition" action="Scenes/DungCellView.xml"/>
+  </ClickAreas>
+</Scene>

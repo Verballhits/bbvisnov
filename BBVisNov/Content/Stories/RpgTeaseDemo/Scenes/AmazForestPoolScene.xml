@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/AmazForestPool.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog></InitialDialog>
+  <ClickAreas>
+    <Area area="0.3, 0.2, 0.4, 0.4" name="Up the hill" type="SceneTransition" action="Scenes/AmazForestRocksScene.xml"/>
+    <Area area="0, 0.9, 1, 1" name="To a path" type="SceneTransition" action="Scenes/AmazForestPathForkMudScene.xml"/>
+  </ClickAreas>
+</Scene>

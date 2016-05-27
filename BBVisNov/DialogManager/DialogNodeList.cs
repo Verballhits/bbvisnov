@@ -55,6 +55,12 @@ namespace BBVisNov
         [XmlArray("Responses")]
         [XmlArrayItem("Response")]
         public List<ReponseNode> Responses { get; set; }
+
+        [XmlElement("QuestStart")]
+        public int QuestStart { get; set; }
+
+        [XmlElement("QuestComplete")]
+        public int QuestComplete { get; set; }
     }
 
     public class ReponseNode

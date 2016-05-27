@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/ForestCabin.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/ForestCabinOpenDialog.xml</InitialDialog>
+  <ClickAreas>
+	<Area area="0, 0.9, 1, 1" name="Into the forest" type="SceneTransition" action="Scenes/IntroForestPathSunnyScene.xml"/>
+  </ClickAreas>
+  <Characters>
+    <Character name="Hermit" area="0.45, 0.1, 0.72, 1.1" image="Graphics/Characters/hermit.png" visible="true"/>
+  </Characters>
+</Scene>

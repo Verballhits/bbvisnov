@@ -40,6 +40,12 @@ namespace BBVisNov
             get { return itemManager; }
         }
 
+        private QuestManager questManager;
+        public QuestManager QuestManager
+        {
+            get { return questManager; }
+        }
+
         private Scene currentScene;
         public Scene CurrentScene
         {
@@ -53,11 +59,13 @@ namespace BBVisNov
             musicManager = new MusicManager();
             soundEffectManager = new SoundEffectManager();
             itemManager = new ItemManager(screenManager);
+            questManager = new QuestManager(screenManager);
             hud = new Hud(screenManager);
         }
 
         public void Initialize()
         {
+            questManager.Initialize();
             hud.Initialize();
         }
 
@@ -121,10 +129,12 @@ namespace BBVisNov
             hud.LoadContent();
             dialogManager.LoadContent();
             itemManager.LoadContent();
+            questManager.LoadContent();
         }
 
         public void UnloadContent()
         {
+            questManager.UnloadContent();
             itemManager.UnloadContent();
             dialogManager.UnloadContent();
             musicManager.StopBackgroundMusic();
@@ -141,6 +151,7 @@ namespace BBVisNov
                 }
             }
 
+            questManager.Update(gameTime);
             dialogManager.Update(gameTime);
             musicManager.Update();
             hud.Update(gameTime);
@@ -156,6 +167,7 @@ namespace BBVisNov
                 }
             }
 
+            questManager.Draw(gameTime, spriteBatch);
             dialogManager.Draw(gameTime, spriteBatch);
             hud.Draw(gameTime, spriteBatch);
         }

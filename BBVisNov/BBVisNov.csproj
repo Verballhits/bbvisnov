@@ -53,6 +53,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestManager\QuestLog.cs" />
     <Compile Include="QuestManager\Quest.cs" />
     <Compile Include="QuestManager\QuestManager.cs" />
     <Compile Include="QuestManager\QuestState.cs" />
@@ -68,6 +69,8 @@
     <Compile Include="Screens\GameplayScreen.cs" />
     <Compile Include="Screens\MenuScreen.cs" />
     <Compile Include="Screens\PauseScreen.cs" />
+    <Compile Include="Screens\StoriesScreen.cs" />
+    <Compile Include="StoryManager\Story.cs" />
     <Compile Include="StoryManager\StoryManager.cs" />
     <Compile Include="TextureManager\TextureManager.cs" />
     <Compile Include="VisNovGame.cs" />

@@ -23,5 +23,7 @@ namespace BBVisNov
         [XmlAttribute("action")]
         public string Action { get; set; }
 
+        [XmlAttribute("questrequired")]
+        public int QuestRequired { get; set; }
     }
 }

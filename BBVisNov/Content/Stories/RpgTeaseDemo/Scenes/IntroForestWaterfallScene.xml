@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/ForestWaterfall.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/ForestWaterFallDialog.xml</InitialDialog>
+  <ClickAreas>
+    <Area area="0.25, 0.25, 0.29, 0.4" name="Through the bushes" type="SceneTransition" action="Scenes/IntroForestPathNarrowScene.xml" questrequired="2"/>
+	<Area area="0, 0.9, 1, 1" name="Down stream" type="SceneTransition" action="Scenes/IntroForestPathStreamScene.xml"/>
+  </ClickAreas>
+</Scene>

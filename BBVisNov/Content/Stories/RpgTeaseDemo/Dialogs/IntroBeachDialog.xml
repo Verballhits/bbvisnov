@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Once"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Ow... my head...</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">*cough* *cough*</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Hmm, what am I doing here.</Line>
+        <Line>I don't know this place.</Line>
+		<Line>And this headache is killing me.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="2">I am thristy, I need to find some water.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2" >
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Well, I know I can't drink sea water.</Line>
+        <Line>I guess I should head inland a bit and look for some fresh water.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">Lets see, where too.</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

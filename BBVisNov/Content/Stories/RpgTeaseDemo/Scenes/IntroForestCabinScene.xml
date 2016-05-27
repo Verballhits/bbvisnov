@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/ForestCabin.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog></InitialDialog>
+  <ClickAreas>
+    <Area area="0.58, 0.3, 0.63, 0.43" name="Knock on the door" type="SceneTransition" action="Scenes/IntroForestCabinOpenScene.xml"/>
+	<Area area="0, 0.9, 1, 1" name="Into the forest" type="SceneTransition" action="Scenes/IntroForestPathSunnyScene.xml"/>
+  </ClickAreas>
+</Scene>

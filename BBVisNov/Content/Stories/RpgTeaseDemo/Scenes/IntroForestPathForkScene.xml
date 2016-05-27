@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/ForestPathFork.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog></InitialDialog>
+  <ClickAreas>
+    <Area area="0, 0.3, 0.2, 0.4" name="To the left" type="SceneTransition" action="Scenes/IntroForestPathStreamScene.xml"/>
+	<Area area="0.8, 0.45, 1, 0.55" name="To the right" type="SceneTransition" action="Scenes/IntroForestPathSunnyScene.xml"/>
+	<Area area="0.15, 0.9, 0.5, 1" name="Towards the beach" type="SceneTransition" action="Scenes/IntroForestPathScene.xml"/>
+  </ClickAreas>
+</Scene>

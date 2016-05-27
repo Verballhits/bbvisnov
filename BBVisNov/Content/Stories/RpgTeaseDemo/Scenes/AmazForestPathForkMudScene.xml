@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/AmazForestPathForkMud.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/AmazForestPathForkMudDialog.xml</InitialDialog>
+  <ClickAreas>
+    <Area area="0, 0.3, 0.25, 0.6" name="Left" type="SceneTransition" action="Scenes/AmazForestPathWoodScene.xml"/>
+    <Area area="0.6, 0.3, 1, 0.6" name="Right" type="SceneTransition" action="Scenes/AmazForestPathNarrowScene.xml"/>
+    <Area area="0, 0.9, 1, 1" name="To the pool" type="SceneTransition" action="Scenes/AmazForestPoolScene.xml"/>
+  </ClickAreas>
+  <Characters>
+    <Character name="Saxa" area="0.4, 0.1, 0.67, 1" image="Graphics/Characters/amaz_saxa_spear.png" visible="false"/>
+  </Characters>
+</Scene>

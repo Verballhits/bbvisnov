@@ -20,15 +20,11 @@ namespace BBVisNov
         Inventory inventory;
         public Dictionary<string, int> DialogCounters { get; set; }
 
-        QuestManager questManager;
-        public QuestManager QuestManager { get { return questManager; } }
-
         public Player(GameManager gm)
         {
             gameManager = gm;
 
             inventory = new Inventory(this);
-            questManager = new QuestManager();
             DialogCounters = new Dictionary<string, int>();
         }
 
@@ -41,6 +37,8 @@ namespace BBVisNov
 
         public void Initialize()
         {
+            inventory.Initialize();
+
             inventory.AddItem(new InventoryItem(11));
             inventory.AddItem(new InventoryItem(12));
             inventory.AddItem(new InventoryItem(13));

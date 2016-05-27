@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Once"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+    <CharacterImage name="Saxa">Graphics/Characters/amaz_saxa_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+  <DialogNode id="0">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Oh crap...</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <ShowSceneCharacter>Saxa</ShowSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Hey you there...</Line>
+        <Line>What are you doing here? Don't you know where you are?</Line>
+        <Line>You could get yourself killed if you run into the wrong people around here.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="2">I.. I'm lost and trying to find my way back to civilization.</Response>
+        <Response nextnode="2">Run away.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well you've picked a dangerous path to travel.</Line>
+        <Line>This is amazon land and they don't take kindly to strange men.</Line>
+        <Line>You better get out of here, while you still can.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">Aren't you an amazon?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="3">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Me? Well no, I'm just a serving girl.</Line>
+        <Line>I'm out here gathering herbs for some of the prisoners.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="4">Phew, I though I was in trouble for a minute there.</Response>
+        <Response nextnode="5">The prisoners?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="4">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well you're lucky, there are patrols walking these woods as well.</Line>
+        <Line>If you had run into any of those you would have been captured or even killed.</Line>
+        <Line>Although judging by the state of the prisoners I'm not sure which would be better.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="5">The prisoners?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="5">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Yeah, the few that are left are in a pretty bad state.</Line>
+        <Line>Having trouble walking, hihi...</Line>
+        <Line>I know I shouldn't laugh but they we're so full of themselves when they were caught.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="6">What happened to them?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="6">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well, lets just say their manhood was tested.</Line>
+        <Line>You need to be pretty resilient to pass the testing.</Line>
+        <Line>And they were not, hihi...</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="7">They sound like whimps to me.</Response>
+        <Response nextnode="10">Sounds rough, I better avoid them at all costs, do you happen to know a way out of here?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="7">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Ha! I doubt you would do any better.</Line>
+        <Line>You look pretty scrawney compared to them.</Line>
+        <Line>I doubt you would last more then a few minutes.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="8">I'm stronger then I look.</Response>
+        <Response nextnode="10">Well, perhaps I should try to avoid being tested. Do you happen to know a way out of here?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="8">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Typical male, all arogant and full of bravado.</Line>
+        <Line>Well good luck finding your way outta here.</Line>
+        <Line>If you get caught I'll definately be there to watch you taken down a notch.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="100">Hey hang on a minute, no need to be like that.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="10">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Smart man, sure, just keep to the left, and you'll come across a bridge.</Line>
+        <Line>Cross that and stick to the path.</Line>
+        <Line>That should take you out of the forrest and out of amazon territory.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="100">Thanks a lot, you've been a great help.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="100">
+      <HideSceneCharacter>Saxa</HideSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>She walk off...</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">Well that was, interesting...</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

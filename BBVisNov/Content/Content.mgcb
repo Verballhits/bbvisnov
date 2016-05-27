@@ -148,3 +148,183 @@
 #begin Game/Graphics/Backgrounds/menu.jpg
 /copy:Game/Graphics/Backgrounds/menu.jpg
 
+#begin Stories/RpgTeaseDemo.story.xml
+/copy:Stories/RpgTeaseDemo.story.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPath.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPath.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathFork.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathFork.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/IntroBeachPathWoods.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/IntroBeachPathWoods.jpg
+
+#begin Stories/RpgTeaseDemo/Items/Items.xml
+/copy:Stories/RpgTeaseDemo/Items/Items.xml
+
+#begin Stories/RpgTeaseDemo/Dialogs/IntroBeachDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/IntroBeachDialog.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/player_dialog.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/player_dialog.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Items/money_256.png
+/copy:Stories/RpgTeaseDemo/Graphics/Items/money_256.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Items/shield_bronze.png
+/copy:Stories/RpgTeaseDemo/Graphics/Items/shield_bronze.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Items/shield_gold.png
+/copy:Stories/RpgTeaseDemo/Graphics/Items/shield_gold.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Items/shield_silver.png
+/copy:Stories/RpgTeaseDemo/Graphics/Items/shield_silver.png
+
+#begin Stories/RpgTeaseDemo/Music/AMemoryAway.ogg
+/copy:Stories/RpgTeaseDemo/Music/AMemoryAway.ogg
+
+#begin Stories/RpgTeaseDemo/Music/FromHere.ogg
+/copy:Stories/RpgTeaseDemo/Music/FromHere.ogg
+
+#begin Stories/RpgTeaseDemo/Music/TheForestAwakes.ogg
+/copy:Stories/RpgTeaseDemo/Music/TheForestAwakes.ogg
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroBeachScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroBeachScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestPathForkScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestPathForkScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestPathScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestPathScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroBeachPathScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroBeachPathScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/Beach.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/Beach.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestCabin.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestCabin.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathSun.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathSun.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestStream.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestStream.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestWaterfall.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestWaterfall.jpg
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestCabinScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestCabinScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestPathStreamScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestPathStreamScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestPathSunnyScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestPathSunnyScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestWaterfallScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestWaterfallScene.xml
+
+#begin Stories/RpgTeaseDemo/Dialogs/ForestWaterfallDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/ForestWaterfallDialog.xml
+
+#begin Stories/RpgTeaseDemo/Dialogs/ForestCabinOpenDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/ForestCabinOpenDialog.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/hermit.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/hermit.png
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestCabinOpenScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestCabinOpenScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/hermit_dialog.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/hermit_dialog.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathNarrow.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/ForestPathNarrow.jpg
+
+#begin Stories/RpgTeaseDemo/Sounds/rustle07.ogg
+/copy:Stories/RpgTeaseDemo/Sounds/rustle07.ogg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPool.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPool.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestRocks.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestRocks.jpg
+
+#begin Stories/RpgTeaseDemo/Dialogs/AmazForestRocksDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/AmazForestRocksDialog.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestRocksScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestRocksScene.xml
+
+#begin Stories/RpgTeaseDemo/Quests/Quests.xml
+/copy:Stories/RpgTeaseDemo/Quests/Quests.xml
+
+#begin Stories/SchoolNovelDemo/Quests/Quests.xml
+/copy:Stories/SchoolNovelDemo/Quests/Quests.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestPoolScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestPoolScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathForkMud.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathForkMud.jpg
+
+#begin Stories/RpgTeaseDemo/Scenes/IntroForestPathNarrowScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/IntroForestPathNarrowScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_dialog.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_dialog.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_doorway.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_doorway.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_furs.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_furs.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_mounted.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_mounted.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_spear.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_spear.png
+
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_weaponsdrawn.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_saxa_weaponsdrawn.png
+
+#begin Stories/RpgTeaseDemo/Dialogs/AmazForestPathForkMudDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/AmazForestPathForkMudDialog.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestBridgeStream.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestBridgeStream.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathNarrow.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathNarrow.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathWood.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestPathWood.jpg
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestBridgeScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestBridgeScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestPathNarrowScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestPathNarrowScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestPathWoodScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestPathWoodScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestPathForkMudScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestPathForkMudScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestCliff.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestCliff.jpg
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestCliffScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestCliffScene.xml
+

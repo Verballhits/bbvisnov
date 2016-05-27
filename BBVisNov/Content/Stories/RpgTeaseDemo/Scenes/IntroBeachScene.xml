@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/Beach.jpg</BackgroundImage>
+  <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/IntroBeachDialog.xml</InitialDialog>
+  <ClickAreas>
+    <Area area="0.9, 0, 1, 1" name="Head inland" type="SceneTransition" action="Scenes/IntroBeachPathScene.xml"/>
+  </ClickAreas>
+</Scene>

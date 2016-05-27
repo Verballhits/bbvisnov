@@ -35,7 +35,7 @@ namespace BBVisNov
             background_texture = screenManager.GameManager.TextureManager.GetTextureAddUser(background_name);
 
             menubackground_texture = new Texture2D(screenManager.GameManager.GraphicsDevice, 1, 1);
-            menubackground_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(0, 0, 255, 120) });
+            menubackground_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(20, 20, 20, 120) });
 
             // Create and add menu items
             MenuItem item_resume = new MenuItem(menu, "Resume Game", new Vector2(0, 100));

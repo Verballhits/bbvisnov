@@ -27,7 +27,10 @@ namespace BBVisNov
             player = pl;
             isVisible = false;
             items = new Dictionary<int, InventoryItem>();
+        }
 
+        public void Initialize()
+        {
             position_inventory = new Vector2(player.GameManager.Game.Window.ClientBounds.Width * 0.66f, 30);
             size_inventory = new Vector2(player.GameManager.Game.Window.ClientBounds.Width - position_inventory.X - 10, 200);
             area_inventory = new Rectangle((int)position_inventory.X, (int)position_inventory.Y, (int)size_inventory.X, (int)size_inventory.Y);
@@ -102,7 +105,7 @@ namespace BBVisNov
 
                     if (gridX + 49 > size_inventory.X)
                     {
-                        gridX = 0;
+                        gridX = 1;
                         gridY += 49;
                     }
                 }

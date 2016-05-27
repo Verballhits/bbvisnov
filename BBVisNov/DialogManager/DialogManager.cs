@@ -191,6 +191,26 @@ namespace BBVisNov
                 {
                     sceneManager.SoundEffectManager.PlaySoundEff(screenManager.GameManager.StoryManager.ContentFolderStoryFull + dialogNodes[currentNodeID].SoundEffect);
                 }
+
+                if (dialogNodes[currentNodeID].QuestStart != 0)
+                {
+                    QuestManager qm = sceneManager.QuestManager;
+
+                    if (!qm.HasActiveQuest(dialogNodes[currentNodeID].QuestComplete))
+                    {
+                        qm.StartQuest(dialogNodes[currentNodeID].QuestStart);
+                    }
+                }
+
+                if (dialogNodes[currentNodeID].QuestComplete != 0)
+                {
+                    QuestManager qm = sceneManager.QuestManager;
+
+                    if (qm.HasActiveQuest(dialogNodes[currentNodeID].QuestComplete))
+                    {
+                        qm.CompleteQuest(dialogNodes[currentNodeID].QuestComplete);
+                    }
+                }
             }
         }
 
@@ -224,8 +244,8 @@ namespace BBVisNov
         {
             if (dialogActive)
             {
-                spriteBatch.Draw(background_texture, area_dialog, Color.DarkBlue);
-                spriteBatch.Draw(background_texture, area_responses, Color.DarkGreen);
+                spriteBatch.Draw(background_texture, area_dialog, Color.DimGray);
+                spriteBatch.Draw(background_texture, area_responses, Color.Black);
 
                 spriteBatch.Draw(characterTextures[dialogNodes[currentNodeID].CharacterImage], area_character, Color.White);
 

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Once"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Darn, rocks just slid down and filled the narrow passage back to the water fall.</Line>
+        <Line>Well I guess there is no way back now. No choice but to push on and find a way through the amazon forest.</Line>
+        <Line>I'll have to be carefull not to run into any warriors.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">Now where too.</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

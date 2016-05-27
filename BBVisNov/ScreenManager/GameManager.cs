@@ -52,12 +52,12 @@ namespace BBVisNov
 
         public override void Initialize()
         {
-            base.Initialize();
-
             inputManager.Initialize();
             player.Initialize();
             storyManager.Initialize();
             screenManager.Initialize();
+
+            base.Initialize();
         }
 
         protected override void LoadContent()

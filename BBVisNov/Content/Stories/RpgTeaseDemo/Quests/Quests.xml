@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Quests>
+  <Quest id="1" name="Foliage Cutters" desc="Find something to cut through the foliage." nextquest="2" />
+  <Quest id="2" name="Escape Area" desc="Find a way to get out of the forest you woke up in." />
+</Quests>

@@ -38,7 +38,7 @@ namespace BBVisNov
             background_texture = screenManager.GameManager.TextureManager.GetTextureAddUser(background_name);
 
             menubackground_texture = new Texture2D(screenManager.GameManager.GraphicsDevice, 1, 1);
-            menubackground_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(0, 0, 255, 120) });
+            menubackground_texture.SetData<Color>(new Color[] { Color.FromNonPremultiplied(20, 20, 20, 120) });
 
             // Create and add menu items
             MenuItem item_new = new MenuItem(menu, "New Game", new Vector2(0, 100));
@@ -109,9 +109,7 @@ namespace BBVisNov
                     {
                         isActive = false;
                         screenManager.RemoveScreen(this);
-                        screenManager.GameManager.Player.DialogCounters.Clear();
-                        screenManager.AddScreen(new GameplayScreen(screenManager));
-                        screenManager.GameManager.Player.SetActive();
+                        screenManager.AddScreen(new StoriesScreen(screenManager));
                     }
                     else if (menu.MenuItems[i].Text == "Load Game")
                     {

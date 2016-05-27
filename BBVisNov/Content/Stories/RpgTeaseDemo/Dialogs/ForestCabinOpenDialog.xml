@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Repeat"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+    <CharacterImage name="Hermit">Graphics/Characters/hermit_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Why hello there, have you been here before?</Line>
+        <Line>How did you get way out here?</Line>
+        <Line>I hardly ever see anybody this far out.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">I woke up on the beach and can't remember how I got there.</Response>
+        <Response nextnode="2">Yes I have been here before, don't you remember?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>The beach you say...</Line>
+        <Line>Lovely day for a swim.</Line>
+        <Line>Meet any mermaids?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">No mermaids, you're the first person I've found. Can you help me?</Response>
+        <Response nextnode="100">Um no, but I gotta get going.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Oh yes, of course of course.</Line>
+        <Line>How have you been? Who were you again?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">Can you help me?</Response>
+        <Response nextnode="100">Actually, never mind.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="3">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Sure I can, what can I help you with?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="4">I am looking for a way out of this forest.</Response>
+        <Response nextnode="100">Actually, never mind.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="4">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Out you say? That's not going to be easy. It's pretty isolated here, that's why I live here.</Line>
+        <Line>We are in a land-lock of sorts, with the ocean covering most of the south and east, and high cliffs to either side.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="5">That does not sound good, I really need to get out of here.</Response>
+        <Response nextnode="100">Actually, never mind.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="5">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Well, there is one way out, but it is a treacherous path.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="6">How treacherous are we talking?</Response>
+        <Response nextnode="100">Actually, never mind.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="6">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>There is a narrow path through the cliffs by the waterfall. You might be able to sqeeze through there.</Line>
+        <Line>But the land on the other side is controlled by savage warriors that don't take kindly to strangers.</Line>
+        <Line>That is also why I don't get many visitors here.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="7">Savage warriors?</Response>
+        <Response nextnode="100">Actually, never mind.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="7">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Yes, savage amazon warriors.</Line>
+        <Line>All women, but all are highly skilled in combat as they have been training for most of their lives.</Line>
+        <Line>Thay have a perticular dislike for men, and all men are forbidden to enter their land.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="8">I don't have a choice, I really need to get out of here.</Response>
+        <Response nextnode="100">That sounds a bit dangerous, maybe I'll look for another way out.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="8">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Well if you are sure, just head back into the forrest and keep to the left at the fork.</Line>
+        <Line>That should lead you up to the waterfall. The opening in the cliff should be to the left of the waterfall probably covered by bushes.</Line>
+        <Line>Or was it to the right? Hmm... Either way I would just stay here, much safer.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="9">I can't stay I have to try and get out, I'll try to sneak through their land undetected.</Response>
+        <Response nextnode="100">That sounds a bit dangerous, perhaps I should stay here for a while.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="9">
+      <CharacterImage>Hermit</CharacterImage>
+      <Text>
+        <Line>Ok then, be carefull.</Line>
+        <Line>If you run into any of them, well I hope you can either fight, run, or take a lot of pain. I hear they like to play with their prisoners.</Line>
+        <Line>Good luck.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="101">Thanks, I'll be carefull.</Response>
+        <Response nextnode="101">Wait what?</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="100">
+      <HideSceneCharacter>Hermit</HideSceneCharacter>
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>Well he wasn't much help.</Line>
+        <Line>There has got to be a way out of here.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">Keep walking</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="101">
+      <HideSceneCharacter>Hermit</HideSceneCharacter>
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>At least I know where to go now.</Line>
+        <Line>I'll just have to be really carefull once I get through the cliff.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <QuestComplete>1</QuestComplete>
+      <Responses>
+        <Response nextnode="-1">Leave</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Once"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>The way forward seems blocked by that large waterfall.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">Search the cliff for a path.</Response>
+        <Response nextnode="-1">Give up.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>There does not appear to be a way through.</Line>
+        <Line>The foliage is too thick for a more thorough search.</Line>
+      </Text>
+      <SoundEffect>Sounds/russle07.ogg</SoundEffect>
+      <QuestStart>1</QuestStart>
+      <Responses>
+        <Response nextnode="-1">Give up</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>
