@@ -40,6 +40,12 @@ namespace BBVisNov
             get { return storyManager; }
         }
 
+        private SaveManager saveManager;
+        public SaveManager SaveManager
+        {
+            get { return saveManager; }
+        }
+        
         public GameManager(Game game)
             : base(game)
         {
@@ -48,6 +54,7 @@ namespace BBVisNov
             player = new Player(this);
             storyManager = new StoryManager(this);
             screenManager = new ScreenManager(this);
+            saveManager = new SaveManager();
         }
 
         public override void Initialize()

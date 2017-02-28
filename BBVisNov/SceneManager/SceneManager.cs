@@ -52,6 +52,8 @@ namespace BBVisNov
             get { return currentScene; }
         }
 
+        private string currentSceneName = "";
+
         public SceneManager(ScreenManager sm)
         {
             screenManager = sm;
@@ -73,6 +75,8 @@ namespace BBVisNov
         {
             UnloadCurrentScene();
 
+            currentSceneName = scene;
+
             XmlSerializer serializer = new XmlSerializer(typeof(Scene));
 
             using (TextReader reader = new StreamReader(scene))
@@ -91,6 +95,11 @@ namespace BBVisNov
             
             // Change Music
             musicManager.PlayBackgroundMusic(screenManager.GameManager.StoryManager.ContentFolderStoryFull + currentScene.BackgroundMusic);
+        }
+
+        public string GetCurrentSceneName()
+        {
+            return currentSceneName;
         }
 
         public void UnloadCurrentScene()

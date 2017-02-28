@@ -86,6 +86,12 @@ namespace BBVisNov
                 }
                 else if (selectedItem.Text == "Load Game")
                 {
+                    screenManager.GameManager.SaveManager.LoadGame("Autosave");
+                    screenManager.GameManager.SaveManager.RestoreSaveScene(screenManager.GameManager);
+
+                    isActive = false;
+                    screenManager.RemoveScreen(this);
+                    screenManager.AddScreen(new StoriesScreen(screenManager));
                 }
                 else if (selectedItem.Text == "Options")
                 {
@@ -113,6 +119,19 @@ namespace BBVisNov
                     }
                     else if (menu.MenuItems[i].Text == "Load Game")
                     {
+                        // Restore the story paths
+                        screenManager.GameManager.SaveManager.LoadGame("Autosave");
+                        screenManager.GameManager.SaveManager.RestoreSaveStory(screenManager.GameManager);
+
+                        // Activate the gameplay screen to initialize the scenemanager
+                        isActive = false;
+                        screenManager.RemoveScreen(this);
+                        screenManager.AddScreen(new GameplayScreen(screenManager));
+
+                        // Restore the scene
+                        screenManager.GameManager.SaveManager.RestoreSaveScene(screenManager.GameManager);
+
+                        screenManager.GameManager.Player.SetActive();
                     }
                     else if (menu.MenuItems[i].Text == "Options")
                     {

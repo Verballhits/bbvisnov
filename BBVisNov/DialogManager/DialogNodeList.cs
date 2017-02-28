@@ -61,6 +61,9 @@ namespace BBVisNov
 
         [XmlElement("QuestComplete")]
         public int QuestComplete { get; set; }
+
+        [XmlElement("SceneTransfer")]
+        public string SceneTransfer { get; set; }
     }
 
     public class ReponseNode

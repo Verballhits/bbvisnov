@@ -211,6 +211,11 @@ namespace BBVisNov
                         qm.CompleteQuest(dialogNodes[currentNodeID].QuestComplete);
                     }
                 }
+
+                if (!string.IsNullOrEmpty(dialogNodes[currentNodeID].SceneTransfer))
+                {
+                    sceneManager.LoadNewScene(screenManager.GameManager.StoryManager.ContentFolderStoryFull + dialogNodes[currentNodeID].SceneTransfer, screenManager);
+                }
             }
         }
 

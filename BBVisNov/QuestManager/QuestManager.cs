@@ -20,9 +20,9 @@ namespace BBVisNov
         private QuestList questList;
         private Dictionary<int, Quest> quests;
 
-        public Dictionary<int, Quest> ActiveQuests;
-        public Dictionary<int, Quest> CompletedQuests;
-        public Dictionary<int, Quest> FailedQuests;
+        public SerializableDictionary<int, Quest> ActiveQuests;
+        public SerializableDictionary<int, Quest> CompletedQuests;
+        public SerializableDictionary<int, Quest> FailedQuests;
 
         private QuestLog questLog;
 
@@ -33,9 +33,9 @@ namespace BBVisNov
             questList = new QuestList();
             quests = new Dictionary<int, Quest>();
 
-            ActiveQuests = new Dictionary<int, Quest>();
-            CompletedQuests = new Dictionary<int, Quest>();
-            FailedQuests = new Dictionary<int, Quest>();
+            ActiveQuests = new SerializableDictionary<int, Quest>();
+            CompletedQuests = new SerializableDictionary<int, Quest>();
+            FailedQuests = new SerializableDictionary<int, Quest>();
 
             questLog = new QuestLog(this);
         }

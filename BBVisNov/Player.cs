@@ -18,14 +18,14 @@ namespace BBVisNov
         public SceneManager SceneManager { get { return sceneManager; } }
 
         Inventory inventory;
-        public Dictionary<string, int> DialogCounters { get; set; }
+        public SerializableDictionary<string, int> DialogCounters { get; set; }
 
         public Player(GameManager gm)
         {
             gameManager = gm;
 
             inventory = new Inventory(this);
-            DialogCounters = new Dictionary<string, int>();
+            DialogCounters = new SerializableDictionary<string, int>();
         }
 
         public void SetSceneManager(SceneManager sm)

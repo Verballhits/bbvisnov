@@ -52,6 +52,8 @@ namespace BBVisNov
             get { return allStories; }
         }
 
+        private string activeStoryName = "";
+
         public StoryManager(GameManager gm)
         {
             gameManager = gm;
@@ -93,8 +95,14 @@ namespace BBVisNov
 
         public void SetActiveStory(string storyName)
         {
+            activeStoryName = storyName;
             contentFolderStory = "Stories/" + storyName  + "/";
             initialScene = allStories[storyName].InitialScene;
+        }
+
+        public string GetActiveStory()
+        {
+            return activeStoryName;
         }
     }
 }
