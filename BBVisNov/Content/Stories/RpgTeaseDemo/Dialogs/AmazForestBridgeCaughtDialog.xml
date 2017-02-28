@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialog>
+  <Triggers>
+    <Trigger type="Repeat"></Trigger>
+    <Trigger type="QuestActive">QuestName</Trigger>
+    <Trigger type="QuestComplete">QuestName</Trigger>
+  </Triggers>
+  <CharacterImages>
+    <CharacterImage name="Player">Graphics/Characters/player_dialog.png</CharacterImage>
+	<CharacterImage name="Unknown">Graphics/Characters/amaz_unknown_dialog.png</CharacterImage>
+    <CharacterImage name="Saxa">Graphics/Characters/amaz_saxa_dialog.png</CharacterImage>
+  </CharacterImages>
+  <DialogNodes>
+    <DialogNode id="0">
+      <CharacterImage>Unknown</CharacterImage>
+      <Text>
+        <Line>Stop right there!</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="1">Stop.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="1">
+      <CharacterImage>Unknown</CharacterImage>
+      <Text>
+        <Line>No sudden movements!</Line>
+        <Line></Line>
+        <Line>A figure steps out from behind the bushes.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="2">Grrr...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="2">
+      <ShowSceneCharacter>SaxaIdle</ShowSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well well, what have we here?</Line>
+        <Line>You're threspassing on Amazon land!</Line>
+        <Line>Why are you here?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="3">I was stranded on the beach and am just trying to get back to my home.</Response>
+		<Response nextnode="10">Out of my way women!</Response>
+        <Response nextnode="14">Make a run for it.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="3">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>How unfortunate.</Line>
+		<Line>So, where is this home of yours?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="4">I um, I can't remember. I have lost my memory.</Response>
+        <Response nextnode="5">It's... it's up north.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="4">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well isn't that convienient.</Line>
+        <Line>Hmm, well I think you better come with me to see our leader.</Line>
+        <Line>Perhaps she can help jog your memory or help you find your way back home.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="6">Well very well, I'll come too see your leader.</Response>
+        <Response nextnode="10">No I think I will find my own way, let me pass, now!.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="5">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Liar! There are no settlements up north.</Line>
+		<Line>You're comming with me!</Line>
+		<Line>Perhaps our leader can get the truth out of you.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="6">Damn... Fine I'll come with you.</Response>
+        <Response nextnode="10">No way! I am leaving.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="6">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Glad to see you have some sense. But also a shame really.</Line>
+        <Line>I havn't had a good fight in days.</Line>
+		<Line>Well come here, I'll have to blindfold you, since our destination is a well kept secret.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="100">Blindfold? Well ok then...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="10">
+	  <HideSceneCharacter>SaxaIdle</HideSceneCharacter>
+	  <ShowSceneCharacter>SaxaFight</ShowSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well there is some fight in you after all.</Line>
+        <Line>Good, you'll need that.</Line>
+        <Line>Lets see what your made of!</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="11">Run at her, and punch her in the face.</Response>
+        <Response nextnode="12">Try to run past her.</Response>
+        <Response nextnode="13">Hesitate, as she looks quite fierce.</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="11">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>She dodges your punch with easy and swings back at you with her dagger.</Line>
+        <Line>You manage to pull back and feel the blade pass before your face.</Line>
+        <Line>While you are off balance she steps forward and swigs her foot hard up between your legs.</Line>
+      </Text>
+      <SoundEffect>Sounds/hits/15.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="15">Aarrgg...</Response>
+      </Responses>
+    </DialogNode>
+    <DialogNode id="12">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>She hooks her arm into yours as you are about to pass and spins you around.</Line>
+        <Line>Using your momentum agains you, you crash into her as she lifts her leg and slams her knee into your balls.</Line>
+        <Line>She grins at you as you slide down from her.</Line>
+      </Text>
+      <SoundEffect>Sounds/hits/10.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="15">Aarrgg...</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="13">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Scared are ya? Don't worry I don't bite.</Line>
+		<Line>She slowly walks towards you, smiling.</Line>
+        <Line>Then without warning kicks het foot straight into your nuts.</Line>
+      </Text>
+      <SoundEffect>Sounds/hits/15.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="15">Aarrgg...</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="14">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Before yo make it two steps away from her you hear her comming up behind you.</Line>
+		<Line>Suddenly you hear her shout "Hyjah!" and feel a sudden pain in your nuts.</Line>
+        <Line>As you look down you see her foot sticking out from between your legs, as the pain sets in.</Line>
+      </Text>
+      <SoundEffect>Sounds/hits/15.ogg</SoundEffect>
+      <Responses>
+        <Response nextnode="15">Aarrgg...</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="15">
+      <CharacterImage>Player</CharacterImage>
+      <Text>
+        <Line>As the pain sets in you sink to your knees, holding you balls trying ease the pain, but it's just getting worse.</Line>
+		<Line>You slowly look up seeing her standing over you trying to surpress a smile.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="16">Can only think about the pain.</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="16">
+	  <HideSceneCharacter>SaxaFight</HideSceneCharacter>
+	  <ShowSceneCharacter>SaxaWon</ShowSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Pathetic!</Line>
+		<Line>That all you got?</Line>
+		<Line>One little hit... Pfff, men...</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="17">*cough* You bitch! *cough*</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="17">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Bitch?</Line>
+		<Line>Seeing as your the one on the ground clutching yourself.</Line>
+		<Line>I think I just made you my bitch. Haha!</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="18">Grr...</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="18">
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>What's that? You disagree? What are you going to do about it?</Line>
+		<Line>Ha, you seem to be having trouble even thinking straight.</Line>
+		<Line>There is plenty more where that came from. How about you try again... No?</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="19">Still to hurt to get up.</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="19">
+	  <HideSceneCharacter>SaxaWon</HideSceneCharacter>
+      <ShowSceneCharacter>SaxaIdle</ShowSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Well you're still comming with me.</Line>
+		<Line>She walk up behind you and pulls your hands away from your balls and ties them behind your back.</Line>
+		<Line>She ties a cloth over your slightly teary eyes and drags you to your feet.</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="100">Get up, still in pain.</Response>
+      </Responses>
+    </DialogNode>
+	<DialogNode id="100">
+	  <SceneTransfer>Scenes/AmazForestBlindfoldedScene.xml</SceneTransfer>
+	  <HideSceneCharacter>SaxaIdle</HideSceneCharacter>
+      <CharacterImage>Saxa</CharacterImage>
+      <Text>
+        <Line>Now Move!</Line>
+      </Text>
+      <SoundEffect></SoundEffect>
+      <Responses>
+        <Response nextnode="-1">Start moving.</Response>
+      </Responses>
+    </DialogNode>
+  </DialogNodes>
+</Dialog>

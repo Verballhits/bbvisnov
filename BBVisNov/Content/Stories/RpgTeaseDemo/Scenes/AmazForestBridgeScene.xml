@@ -4,7 +4,7 @@
   <BackgroundMusic>Music/AMemoryAway.ogg</BackgroundMusic>
   <InitialDialog></InitialDialog>
   <ClickAreas>
-    <Area area="0.2, 0.3, 0.4, 0.4" name="Forward" type="SceneTransition" action="Scenes/AmazForestPoolScene.xml"/>
+    <Area area="0.2, 0.3, 0.4, 0.4" name="Forward" type="SceneTransition" action="Scenes/AmazForestBridgeCaughtScene.xml"/>
     <Area area="0, 0.9, 1, 1" name="Back" type="SceneTransition" action="Scenes/AmazForestPathWoodScene.xml"/>
   </ClickAreas>
 </Scene>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene>
+  <BackgroundImage>Graphics/Backgrounds/AmazForestBridgeStream.jpg</BackgroundImage>
+  <BackgroundMusic>Music/Defiance.ogg</BackgroundMusic>
+  <InitialDialog>Dialogs/AmazForestBridgeCaughtDialog.xml</InitialDialog>
+  <ClickAreas>
+  </ClickAreas>
+  <Characters>
+    <Character name="SaxaIdle" area="0.10, 0.1, 0.40, 1.1" image="Graphics/Characters/amaz_saxa_doorway.png" visible="false"/>
+	<Character name="SaxaFight" area="0.05, 0.1, 0.45, 1.1" image="Graphics/Characters/amaz_saxa_weaponsdrawn.png" visible="false"/>
+	<Character name="SaxaWon" area="0.05, 0.1, 0.45, 1.1" image="Graphics/Characters/amaz_saxa.png" visible="false"/>
+  </Characters>
+</Scene>

@@ -328,3 +328,33 @@
 #begin Stories/RpgTeaseDemo/Scenes/AmazForestCliffScene.xml
 /copy:Stories/RpgTeaseDemo/Scenes/AmazForestCliffScene.xml
 
+#begin Stories/RpgTeaseDemo/Graphics/Characters/amaz_unknown_dialog.png
+/copy:Stories/RpgTeaseDemo/Graphics/Characters/amaz_unknown_dialog.png
+
+#begin Stories/RpgTeaseDemo/Music/Defiance.ogg
+/copy:Stories/RpgTeaseDemo/Music/Defiance.ogg
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestBridgeCaughtScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestBridgeCaughtScene.xml
+
+#begin Stories/RpgTeaseDemo/Dialogs/AmazForestBridgeCaughtDialog.xml
+/copy:Stories/RpgTeaseDemo/Dialogs/AmazForestBridgeCaughtDialog.xml
+
+#begin Stories/RpgTeaseDemo/Sounds/hits/10.ogg
+/copy:Stories/RpgTeaseDemo/Sounds/hits/10.ogg
+
+#begin Stories/RpgTeaseDemo/Sounds/hits/15.ogg
+/copy:Stories/RpgTeaseDemo/Sounds/hits/15.ogg
+
+#begin Stories/RpgTeaseDemo/Scenes/AmazForestBlindfoldedScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/AmazForestBlindfoldedScene.xml
+
+#begin Stories/RpgTeaseDemo/Scenes/DungCellScene.xml
+/copy:Stories/RpgTeaseDemo/Scenes/DungCellScene.xml
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestBlindfolded.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/AmazForestBlindfolded.jpg
+
+#begin Stories/RpgTeaseDemo/Graphics/Backgrounds/DungWindow.jpg
+/copy:Stories/RpgTeaseDemo/Graphics/Backgrounds/DungWindow.jpg
+
