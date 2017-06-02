@@ -55,7 +55,7 @@ namespace BBVisNov
             int menu_back_x = (int)(screenManager.GameManager.Game.Window.ClientBounds.Width * 0.4);
             int menu_back_y = 130;
             int menu_back_width = (int)(screenManager.GameManager.Game.Window.ClientBounds.Width * 0.2);
-            int menu_back_heigth = (int)(menu_back_y + menu.MenuItems.Count * 20 + 5);
+            int menu_back_heigth = (int)(menu_back_y + menu.MenuItems.Count * 42 - 70);
 
             menu_background_area = new Rectangle(menu_back_x, menu_back_y, menu_back_width, menu_back_heigth);
         }
@@ -86,12 +86,8 @@ namespace BBVisNov
                 }
                 else if (selectedItem.Text == "Load Game")
                 {
-                    screenManager.GameManager.SaveManager.LoadGame("Autosave");
-                    screenManager.GameManager.SaveManager.RestoreSaveScene(screenManager.GameManager);
-
                     isActive = false;
-                    screenManager.RemoveScreen(this);
-                    screenManager.AddScreen(new StoriesScreen(screenManager));
+                    screenManager.AddScreen(new LoadScreen(screenManager));
                 }
                 else if (selectedItem.Text == "Options")
                 {
@@ -119,19 +115,8 @@ namespace BBVisNov
                     }
                     else if (menu.MenuItems[i].Text == "Load Game")
                     {
-                        // Restore the story paths
-                        screenManager.GameManager.SaveManager.LoadGame("Autosave");
-                        screenManager.GameManager.SaveManager.RestoreSaveStory(screenManager.GameManager);
-
-                        // Activate the gameplay screen to initialize the scenemanager
                         isActive = false;
-                        screenManager.RemoveScreen(this);
-                        screenManager.AddScreen(new GameplayScreen(screenManager));
-
-                        // Restore the scene
-                        screenManager.GameManager.SaveManager.RestoreSaveScene(screenManager.GameManager);
-
-                        screenManager.GameManager.Player.SetActive();
+                        screenManager.AddScreen(new LoadScreen(screenManager));
                     }
                     else if (menu.MenuItems[i].Text == "Options")
                     {

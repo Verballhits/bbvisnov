@@ -79,8 +79,8 @@ namespace BBVisNov
                 }
                 else if (selectedItem.Text == "Save Game")
                 {
-                    screenManager.GameManager.SaveManager.PrepareSave("Autosave", screenManager.GameManager.Player);
-                    screenManager.GameManager.SaveManager.SaveGame("Autosave");
+                    isActive = false;
+                    screenManager.AddScreen(new SaveScreen(screenManager));
                 }
                 else if (selectedItem.Text == "Main Menu")
                 {
@@ -109,8 +109,8 @@ namespace BBVisNov
                     }
                     else if (menu.MenuItems[i].Text == "Save Game")
                     {
-                        screenManager.GameManager.SaveManager.PrepareSave("Autosave", screenManager.GameManager.Player);
-                        screenManager.GameManager.SaveManager.SaveGame("Autosave");
+                        isActive = false;
+                        screenManager.AddScreen(new SaveScreen(screenManager));
                     }
                     else if (menu.MenuItems[i].Text == "Main Menu")
                     {

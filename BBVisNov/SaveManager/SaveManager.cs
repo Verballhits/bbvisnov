@@ -83,5 +83,20 @@ namespace BBVisNov
             gm.Player.SceneManager.QuestManager.CompletedQuests = m_savestate.Quests.CompletedQuests;
             gm.Player.SceneManager.QuestManager.FailedQuests = m_savestate.Quests.FailedQuests;
         }
+
+        public string[] GetSaves()
+        {
+            string[] saves_full = Directory.GetFiles(m_save_location, "*.sav");
+            string[] saves_short = new string[saves_full.Length];
+
+            for (int i = 0; i < saves_full.Length; i++)
+            {
+                string[] save_split = saves_full[i].Split('\\');
+
+                saves_short[i] = save_split[save_split.Length-1].Replace(".sav", "");
+            }
+
+            return saves_short;
+        }
     }
 }

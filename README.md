@@ -45,5 +45,5 @@ For examples of the format in the scenes and dialogs xml files see the sample st
 ## Build
 
 To build from source all you need is:
-- Visual Studio 2015 (Community Edition)
-- MonoGame SDK 3.4
+- Visual Studio Community Edition  2015 (or newer)
+- MonoGame SDK 3.4 (or newer)

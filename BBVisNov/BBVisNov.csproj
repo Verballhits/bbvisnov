@@ -73,7 +73,9 @@
     <Compile Include="ScreenManager\InputManager.cs" />
     <Compile Include="ScreenManager\ScreenManager.cs" />
     <Compile Include="Screens\GameplayScreen.cs" />
+    <Compile Include="Screens\SaveScreen.cs" />
     <Compile Include="Screens\MenuScreen.cs" />
+    <Compile Include="Screens\LoadScreen.cs" />
     <Compile Include="Screens\PauseScreen.cs" />
     <Compile Include="Screens\StoriesScreen.cs" />
     <Compile Include="StoryManager\Story.cs" />
