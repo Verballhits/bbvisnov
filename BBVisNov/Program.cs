@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace BBVisNov
 {
@@ -14,6 +15,9 @@ namespace BBVisNov
         [STAThread]
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            
             using (var game = new VisNovGame())
                 game.Run();
         }
