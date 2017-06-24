@@ -80,9 +80,7 @@ namespace BBVisNov
                 {
                     isActive = false;
                     screenManager.RemoveScreen(this);
-                    screenManager.GameManager.Player.DialogCounters.Clear();
-                    screenManager.AddScreen(new GameplayScreen(screenManager));
-                    screenManager.GameManager.Player.SetActive();
+                    screenManager.AddScreen(new StoriesScreen(screenManager));
                 }
                 else if (selectedItem.Text == "Load Game")
                 {
